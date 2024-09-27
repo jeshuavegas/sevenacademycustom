@@ -107,8 +107,11 @@ class Sevenacademycustom_Public {
 	*/
 	public function ss_year_shortcode() {
 
-		$year = date_i18n ('Y');
-		return $year;
+		function return_year() {
+			$year = date_i18n ('Y');
+			return $year;
+		}
+		add_shortcode( 'ss_year', 'return_year' );
 
 	}
 
