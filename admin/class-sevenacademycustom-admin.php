@@ -147,16 +147,4 @@ class Sevenacademycustom_Admin {
 
 	}
 
-	/**
-	* Current year shortcode
-	*
-	* @since    1.0.0
-	*/
-	public function ss_year_shortcode() {
-
-		$year = date_i18n ('Y');
-		return $year;
-
-	}
-
 }
