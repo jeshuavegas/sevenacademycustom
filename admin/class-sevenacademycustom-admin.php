@@ -97,13 +97,6 @@ class Sevenacademycustom_Admin {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sevenacademycustom-admin.js', array( 'jquery' ), $this->version, false );
-
-		// Activate the close button for the contact floating menu.
-		wp_enqueue_script( 'flaoting-btn-close', plugin_dir_url( __FILE__ ) . 'js/floating-button-close.js', array( 'jquery' ), $this->version, true );
-
-		// Enqueue Seven Academy meta pixel script
-		wp_enqueue_script( 'meta-pixel', plugin_dir_url( __FILE__ ) . 'js/meta-pixel.js', array( 'jquery' ), $this->version, false );
-
 	}
 
 	/**
